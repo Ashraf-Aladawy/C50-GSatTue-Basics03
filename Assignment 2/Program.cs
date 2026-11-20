@@ -194,14 +194,22 @@ namespace Assignment_2
             /*Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
              continue, don't stop the loop).*/
 
-            foreach (string bookTitle in books)
-            {
-                if (bookTitle == "The Pragmatic Programmer")
-                {
-                    continue;
-                }
-                Console.WriteLine(bookTitle);
-            }
+            //foreach (string bookTitle in books)
+            //{
+            //    if (bookTitle == "The Pragmatic Programmer")
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(bookTitle);
+            //}
+            #endregion
+
+            #region Question 18
+            /*Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+             use return to exit the method early instead of printing anything.*/
+
+            PrintFirstBook(books);
+
             #endregion
 
 
@@ -211,5 +219,14 @@ namespace Assignment_2
 
 
         }
+          public static void PrintFirstBook(string[] books)
+        {
+            if (books.Length == 0)
+            {
+                return;
+            }
+            Console.WriteLine(books[0]);
+        }
+
     } 
 }
