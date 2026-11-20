@@ -56,20 +56,20 @@ namespace Assignment_2
              * Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
               Pages: 464" using the + operator*/
 
-            string title = "Clean Code";
-            int pages = 464;
-            Console.WriteLine("Book: " + title + ", Pages: " + pages);
+            //string title = "Clean Code";
+            //int pages = 464;
+            //Console.WriteLine("Book: " + title + ", Pages: " + pages);
             #endregion
 
             #region Question 6
             //Build the same sentence as above, but using string interpolation ($"...").
-            Console.WriteLine($"Book: {title}, Pages: {pages}");
+            //Console.WriteLine($"Book: {title}, Pages: {pages}");
 
             #endregion
 
             #region Question 7
             //Build the same sentence again, but using string.Format().
-            Console.WriteLine(string.Format("Book: {0}, Pages: {1}", title, pages));
+            //Console.WriteLine(string.Format("Book: {0}, Pages: {1}", title, pages));
 
             #endregion
 
@@ -88,9 +88,20 @@ namespace Assignment_2
             //}
 
             #endregion
+
+            #region Question 9
+            /*Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
+             greater than 300 and isAvailable is true. Use the && operator*/
+            int pages = 464;
+            bool isAvailable = true;
+            if(pages > 300 && isAvailable)
+            {
+                Console.WriteLine("You can borrow this book");
+            }
+            #endregion
         }
 
-      
+
 
 
     }
