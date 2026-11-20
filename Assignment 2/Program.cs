@@ -180,11 +180,25 @@ namespace Assignment_2
             /*Using the same books array, loop through it and print each title, but stop completely (break) once
              you reach "Refactoring".*/
 
+            //foreach (string bookTitle in books)
+            //{
+            //    if(bookTitle == "Refactoring")
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine(bookTitle);
+            //}
+            #endregion
+
+            #region Question 17
+            /*Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+             continue, don't stop the loop).*/
+
             foreach (string bookTitle in books)
             {
-                if(bookTitle == "Refactoring")
+                if (bookTitle == "The Pragmatic Programmer")
                 {
-                    break;
+                    continue;
                 }
                 Console.WriteLine(bookTitle);
             }
