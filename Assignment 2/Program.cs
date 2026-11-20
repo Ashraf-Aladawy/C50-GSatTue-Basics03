@@ -34,11 +34,11 @@ namespace Assignment_2
              Create a StringBuilder, Append() the text "Book List", then Append() "- Updated" onto the same
              object. Print the final result.
              */
-            StringBuilder strBuilder = new StringBuilder();
-            strBuilder.Append("Book List");
-            strBuilder.Append(" - Updated");
-            //strBuilder.Append("Book List").Append("- Updated"); // Another answer
-            Console.WriteLine(strBuilder);
+            //StringBuilder strBuilder = new StringBuilder();
+            //strBuilder.Append("Book List");
+            //strBuilder.Append(" - Updated");
+            ////strBuilder.Append("Book List").Append("- Updated"); // Another answer
+            //Console.WriteLine(strBuilder);
 
             #endregion
 
@@ -47,8 +47,17 @@ namespace Assignment_2
              * Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
                Print the result
              */
-            strBuilder.Replace("Book List","Library");
-            Console.WriteLine(strBuilder);
+            //strBuilder.Replace("Book List","Library");
+            //Console.WriteLine(strBuilder);
+            #endregion
+
+            #region Question 5
+            /*
+             * Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
+              Pages: 464" using the + operator*/
+            string title = "Clean Code";
+            int pages = 464;
+            Console.WriteLine("Book: " + title + ", Pages: " + pages);
             #endregion
         }
 
