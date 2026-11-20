@@ -1,4 +1,6 @@
-﻿namespace Assignment_2
+﻿using System.Text;
+
+namespace Assignment_2
 {
     internal class Program
     {
@@ -21,9 +23,22 @@
              Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals()
              to check if they point to the same object in memory.
              */
-            string str1 = "Clean Code";
-            string str2 = "Clean Code";
-            Console.WriteLine(ReferenceEquals(str1, str2));
+            //string str1 = "Clean Code";
+            //string str2 = "Clean Code";
+            //Console.WriteLine(ReferenceEquals(str1, str2));
+
+            #endregion
+
+            #region Question 3
+            /*
+             Create a StringBuilder, Append() the text "Book List", then Append() "- Updated" onto the same
+             object. Print the final result.
+             */
+            StringBuilder strBuilder = new StringBuilder();
+            strBuilder.Append("Book List");
+            strBuilder.Append(" - Updated");
+            //strBuilder.Append("Book List").Append("- Updated"); // Another answer
+            Console.WriteLine(strBuilder);
 
             #endregion
         }
